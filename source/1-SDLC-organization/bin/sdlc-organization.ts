@@ -34,7 +34,7 @@ const nestedOU = [
         name: 'SharedServices',
         accounts: [
             {
-                name: 'CICD',
+                name: 'DevOps',
                 type: AccountType.CICD
             }
         ]
@@ -43,25 +43,25 @@ const nestedOU = [
         name: 'SDLC',
         accounts: [
             {
-                name: 'Dev',
+                name: 'Development',
                 type: AccountType.PLAYGROUND
             },
             {
-                name: 'Staging',
+                name: 'Testing',
                 type: AccountType.STAGE,
-                stageName: 'staging',
+                stageName: 'testing',
                 stageOrder: 1,
                 hostedServices: ['ALL']
             }
         ]
     },
     {
-        name: 'Prod',
+        name: 'Production',
         accounts: [
             {
-                name: 'Prod',
+                name: 'Production',
                 type: AccountType.STAGE,
-                stageName: 'prod',
+                stageName: 'production',
                 stageOrder: 2,
                 hostedServices: ['ALL']
             }
